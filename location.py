@@ -16,16 +16,18 @@ class Location(object):
 		buried:			dictionary of Item objects buried in the ground
 	
 	'''
-	def __init__(self, name, key, stuff, adj, description, num, buried, is_dark):
-		'''You must specify all these values upon instantiating the object.'''
+	def __init__(self, name, key, description, num,
+				 stuff = {}, buried = {}, is_dark = False):
 		self.name = name
 		self.key = key
 		self.stuff = stuff
-		self.adjacent = adjacent
 		self.description = description
 		self.num = num
 		self.buried = buried
 		self.is_dark = is_dark
+		
+		# Cannot specify adjacent until all locations have been defined
+		self.adj = {} 
 		self.required = None
 		
 		

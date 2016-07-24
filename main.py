@@ -4,8 +4,11 @@
 # A simple adventure game using object-oriented programming. The player can collect
 # items and travel between various connected locations
 
-import time, random
+import time, random, importlib
 import adventurer, items, location
+
+import default as level
+
 
 
 def get_keys(dictionary):
