@@ -3,7 +3,7 @@
 import random
 
 class Location(object):
-	def __init__(self, name, ref, stuff, adj, description, num, buried, is_dark):
+	def __init__(self, name, z, stuff, adj, description, num, buried, is_dark):
 		'''You must specify all these values upon instantiating the object.'''
 		self.name = name
 		self.ref = ref

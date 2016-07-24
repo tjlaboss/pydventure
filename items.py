@@ -102,7 +102,8 @@ shovel = Tool("shovel", "shovel", is_weapon = True, is_digger = True)
 knife  = Tool("knife", "knife", is_weapon = True, is_blade = True)
 matchbook = Tool("matchbook", "matches", is_firestarter = True, uses = 5)
 
-
+# Special items
+map = Item("map", "map"); map.type = "map"
 
 
 
